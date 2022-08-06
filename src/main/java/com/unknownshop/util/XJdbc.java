@@ -16,10 +16,17 @@ import java.sql.SQLException;
  * @author Dell
  */
 public class XJdbc {
+    //connect to database online azue
+//    static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+//    static String dburl = "jdbc:sqlserver://anhduy281.database.windows.net:1433;database=unknown_shop;";;
+//    static String user = "anhduy281@anhduy281";
+//    static String pass = "Duy2812002";
+    
+    //connect to database local 
     static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    static String dburl = "jdbc:sqlserver://anhduy281.database.windows.net:1433;database=unknown_shop;";;
-    static String user = "anhduy281@anhduy281";
-    static String pass = "Duy2812002";
+    static String dburl = "jdbc:sqlserver://localhost:1433;database=unknown_shop;";;
+    static String user = "sa";
+    static String pass = "";
     
     static {
         try {
